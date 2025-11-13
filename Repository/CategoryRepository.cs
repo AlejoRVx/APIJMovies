@@ -10,6 +10,7 @@ namespace API.J.Movies.Repository
         private readonly ApplicationDbContext _context;
         public CategoryRepository(ApplicationDbContext context)
         {
+         
             _context = context; //Inyección de dependencias
         }
         public async Task<bool> CategoryExistsByIdAsync(int id)

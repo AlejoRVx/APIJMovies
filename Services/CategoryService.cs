@@ -39,7 +39,7 @@ namespace API.J.Movies.Services
 
         public async Task<ICollection<CategoryDto>> GetCategoriesAsync()
         {
-            var categories =  _categoryRepository.GetCategoriesAsync(); //Solo estoy llamando el método desde la capa de Repository
+            var categories = await _categoryRepository.GetCategoriesAsync(); //Solo estoy llamando el método desde la capa de Repository
 
             return _mapper.Map<ICollection<CategoryDto>>(categories); //Mapeo la entidad a DTO   
         }

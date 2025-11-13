@@ -6,6 +6,7 @@ namespace API.J.Movies.DAL.Models
     {
         //propiedades!! se convierten en columnas en la base de datos
         //comando prop para generar una propiedad
+        [Display(Name="Nombre de la categoria")]
         [Required] //este decorador indica que el campo es obligatorio (no acepta nulls)
         public string Name { get; set; }
     }
